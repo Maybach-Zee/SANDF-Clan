@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="images/logo.png" alt="SANDF Logo" width="50">
+                <img src="images/logo2.png" alt="SANDF Logo" width="50">
                 <h1>[<span>SANDF</span>]</h1>
             </div>
             <ul class="nav-links">
@@ -31,7 +31,7 @@
     <!-- Members Hero Section -->
     <section class="members-hero">
         <h1>SANDF MERCHANDISE</h1>
-        <p>The SANDF clan consists of South Africa's most skilled and dedicated Call of Duty players. Each member brings unique talents and expertise to our team, making us a formidable force in competitive gaming.</p>
+        <p>Show your support for the SANDF clan with our official merchandise! From high-quality apparel to gaming accessories, each item is designed with our fans and players in mind. Whether you’re on the grind or cheering from the sidelines, rep the squad in style and comfort.</p>
     </section>
 
     <!-- Main Content -->
@@ -60,19 +60,19 @@
             
             <div class="merch-teaser">
                 <div class="merch-item">
-                    <img src="/api/placeholder/200/200" alt="SANDF T-Shirt">
+                    <img src="images/SANDF5.png" alt="SANDF T-Shirt">
                     <span class="coming-soon-badge">SOON</span>
                 </div>
                 <div class="merch-item">
-                    <img src="/api/placeholder/200/200" alt="SANDF Hoodie">
+                    <img src="images/SANDF4.png" alt="SANDF Hoodie">
                     <span class="coming-soon-badge">SOON</span>
                 </div>
                 <div class="merch-item">
-                    <img src="/api/placeholder/200/200" alt="SANDF Cap">
+                    <img src="images/SANDF6.png" alt="SANDF Hat">
                     <span class="coming-soon-badge">SOON</span>
                 </div>
                 <div class="merch-item">
-                    <img src="/api/placeholder/200/200" alt="SANDF Gaming Gear">
+                    <img src="images/SANDF7.png" alt="SANDF Gaming Gear">
                     <span class="coming-soon-badge">SOON</span>
                 </div>
             </div>
@@ -89,11 +89,11 @@
             <div class="social-share">
                 <p>Spread the word:</p>
                 <div class="social-icons">
-                    <a href="#" title="Share on Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="Share on Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" title="Share on TikTok"><i class="fab fa-tiktok"></i></a>
-                    <a href="#" title="Share on Discord"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.instagram.com/maybachzee?igsh=MTYzYXA1Zno0N3liMA%3D%&ut-m_source=qr" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@maybachzee?_t=ZM-8w7f0JNaPoL&_r=1" title="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@maybachzee?si=TZLtCg12P-Lq_8co" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://discord.gg/kHMJmQHCVr" title="Discord"><i class="fab fa-discord"></i></a>
+
                 </div>
             </div>
         </div>
@@ -110,10 +110,11 @@
                     <p>South Africa's premiere Call of Duty clan, dedicated to excellence, teamwork, and domination in competitive gaming.</p>
                 </div>
                 <div class="footer-socials">
-                    <a href="https://www.instagram.com/yourprofile" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@yourprofile" title="Tiktok"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://www.youtube.com/@yourchannel" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="https://discord.gg/yourinvite" title="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.instagram.com/maybachzee?igsh=MTYzYXA1Zno0N3liMA%3D%&ut-m_source=qr" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@maybachzee?_t=ZM-8w7f0JNaPoL&_r=1" title="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@maybachzee?si=TZLtCg12P-Lq_8co" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://discord.gg/kHMJmQHCVr" title="Discord"><i class="fab fa-discord"></i></a>
+
                 </div>
             </div>
             <div class="footer-column">
@@ -148,7 +149,7 @@
                     </div>
                     <div class="footer-contact-item">
                         <i>🎮</i>
-                        <span>Discord: SANDF-HQ</span>
+                        <span>Discord: [SANDF]</span>
                     </div>
                 </div>
             </div>
@@ -169,30 +170,40 @@
         });
         
         // Countdown Timer
-        // Set the launch date (example: 30 days from now)
-        const launchDate = new Date();
-        launchDate.setDate(launchDate.getDate() + 30);
+// Set the fixed launch date to October 5th, 2025
+const launchDate = new Date('October 5, 2025 00:00:00').getTime();
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = launchDate - now;
+    
+    // Calculate days, hours, minutes, seconds
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    
+    // Update the countdown display
+    document.getElementById('days').innerText = days.toString().padStart(2, '0');
+    document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+    document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+    document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+    
+    // If countdown is finished
+    if (diff < 0) {
+        document.getElementById('days').innerText = '00';
+        document.getElementById('hours').innerText = '00';
+        document.getElementById('minutes').innerText = '00';
+        document.getElementById('seconds').innerText = '00';
         
-        function updateCountdown() {
-            const now = new Date();
-            const diff = launchDate - now;
-            
-            // Calculate days, hours, minutes, seconds
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
-            // Update the countdown display
-            document.getElementById('days').innerText = days.toString().padStart(2, '0');
-            document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
-        }
-        
-        // Update countdown every second
-        setInterval(updateCountdown, 1000);
-        updateCountdown(); // Initial call
+        // You could add additional actions here when countdown finishes
+        // For example, show a "Now Available!" message
+    }
+}
+
+// Update countdown every second
+setInterval(updateCountdown, 1000);
+updateCountdown(); // Initial call
         
         // Handle notification form
         const notifyForm = document.getElementById('notify-form');

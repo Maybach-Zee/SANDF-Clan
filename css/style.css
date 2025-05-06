@@ -1670,7 +1670,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #ff6b6b;
+    background-color: #ff5722;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -1724,7 +1724,7 @@
 }
 
 .social-icons a:hover {
-    color: #ff6b6b;
+    color: #ff5722;
 }
 
 @media (max-width: 768px) {
