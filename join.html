@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <title>Join Us</title>
+    
+    </head>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="SANDF Logo" width="50">
+                <h1>[<span>SANDF</span>]</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="achievements.html" >Achievements</a></li>
+                <li><a href="join.html" class="btn btn-primary">Join Us</a></li>
+            </ul>
+            <div class="mobile-menu">☰</div>
+        </nav>
+    </header>
+
+        <!-- Join Hero Section -->
+        <section class="join-hero">
+            <h1>Join [SANDF] Elite Squad</h1>
+            <p>South Africa's premiere Call of Duty clan is looking for the best players to join our ranks. If you believe you have what it takes to compete at the highest level, apply now.</p>
+        </section>
+
+        <!-- Join Content -->
+        <div class="join-container">
+            <!-- Requirements Section -->
+            <section class="requirements">
+                <h2>Clan Requirements</h2>
+                <ul>
+                    <li>Minimum K/D ratio of 0.5 in Warzone/Multiplayer</li>
+                    <li>Active player with at least 8 hours per week available for clan activities</li>
+                    <li>Must be at lest 14 years or older</li>
+                    <li>Working microphone and stable internet connection</li>
+                    <li>Team player mentality with good communication skills</li>
+                    <li>Ability to participate in weekly practice sessions and tournaments</li>
+                    <li>South African resident or able to play on SA/EU servers with good ping</li>
+                </ul>
+            </section>
+
+    <!-- Application Form -->
+    <section class="application-form">
+        <h2>Clan Application Form</h2>
+        <form id="joinForm" action="https://formsubmit.co/maybachzee@icloud.com" method="POST">
+            <!-- Hidden fields for FormSubmit configuration -->
+            <input type="hidden" name="_subject" value="[SANDF] New Clan Application">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://sandf-clan.com/thank-you.html">
+            
+            <div class="form-group">
+                <label for="gamertag">In-Game Name/Gamertag*</label>
+                <input type="text" id="gamertag" name="gamertag" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="realName">Real Name*</label>
+                <input type="text" id="realName" name="real_name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Age*</label>
+                <input type="number" id="age" name="age" min="16" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="platform">Primary Gaming Platform*</label>
+                <select id="platform" name="platform" required>
+                    <option value="" disabled selected>Select your platform</option>
+                    <option value="PC">PC</option>
+                    <option value="PlayStation 5">PlayStation 5</option>
+                    <option value="PlayStation 4">PlayStation 4</option>
+                    <option value="Xbox Series X/S">Xbox Series X/S</option>
+                    <option value="Xbox One">Xbox One</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="location">Location (City/Province)*</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="kd">Current K/D Ratio*</label>
+                <input type="number" id="kd" name="kd_ratio" step="0.01" min="0" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="hours">Hours Available Per Week*</label>
+                <input type="number" id="hours" name="hours_available" min="1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="experience">Gaming Experience*</label>
+                <textarea id="experience" name="experience" placeholder="Tell us about your Call of Duty experience, previous clans, tournaments, etc." required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="why">Why do you want to join [SANDF]?*</label>
+                <textarea id="why" name="why_join" placeholder="What makes you a good fit for our clan?" required></textarea>
+            </div>
+            
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="commitment" name="commitment" required>
+                    I understand that joining [SANDF] requires commitment to practice sessions and tournaments
+                </label>
+            </div>
+            
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="requirements" name="requirements" required>
+                    I confirm that I meet all the clan requirements listed above
+                </label>
+            </div>
+            
+            <button type="submit" class="btn-submit">Submit Application</button>
+            
+            <p class="form-note">* All fields are required. We'll review your application and contact you within 7 days.</p>
+        </form>
+    </section>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <h2>[<span>SANDF</span>]</h2>
+                </div>
+                <div class="footer-about">
+                    <p>South Africa's premiere Call of Duty clan, dedicated to excellence, teamwork, and domination in competitive gaming.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/yourprofile" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@yourprofile" title="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@yourchannel" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://discord.gg/yourinvite" title="Discord"><i class="fab fa-discord"></i></a>
+
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="members.html">Our Team</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="https://callofdutyleague.com/en-us/">Tournaments</a></li>
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                    <li><a href="index.html">News & Updates</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Contact Us</h3>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i>📧</i>
+                        <span>maybachzee@icloud.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i>🌐</i>
+                        <span>www.sandf-clan.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i>🎮</i>
+                        <span>Discord: SANDF-HQ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 [SANDF] Clan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+    </script>
+
+
+    </html>
