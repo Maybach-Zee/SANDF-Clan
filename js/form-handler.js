@@ -45,7 +45,7 @@ function handleSubmit(event) {
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             // Redirect to thank you page
-            window.location.href = 'https://sandf-clan.com/thank-you.html';
+            window.location.href = "thank-you.html";
         })
         .catch(function(error) {
             console.log('FAILED...', error);
