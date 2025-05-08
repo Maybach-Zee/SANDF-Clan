@@ -368,6 +368,8 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
         }
 
         .news-card:hover {
@@ -376,11 +378,27 @@
 
         .news-img {
             height: 200px;
-            background: url('/api/placeholder/600/400') center/cover no-repeat;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .news-img img {
+            width: 100%;
+            height: 130%;
+            object-fit: cover; /* This prevents stretching */
+            object-position: center;
+            transition: transform 0.3s ease;
+        }
+
+        .news-card:hover .news-img img {
+            transform: scale(1.05); /* Subtle zoom effect on hover */
         }
 
         .news-content {
             padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
         }
 
         .news-date {
@@ -398,6 +416,7 @@
             color: #bbb;
             margin-bottom: 1.5rem;
             font-size: 0.95rem;
+            flex-grow: 1;
         }
 
         .read-more {
@@ -405,6 +424,7 @@
             font-weight: 600;
             display: inline-block;
             transition: color 0.3s;
+            align-self: flex-start;
         }
 
         .read-more:hover {
