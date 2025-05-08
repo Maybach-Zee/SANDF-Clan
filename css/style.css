@@ -217,7 +217,7 @@
         }
 
         .btn-primary:hover {
-            background-color: #b52728;
+            background-color: #e64210;
             transform: translateY(-2px);
         }
 
@@ -237,6 +237,7 @@
             text-align: center;
             padding: 0 1rem;
         }
+
 
         .hero-content {
             max-width: 800px;
@@ -1179,7 +1180,7 @@
         }
         
         .requirements h2 {
-            color: #f44336;
+            color: #ff5722;
             margin-bottom: 20px;
             text-align: center;
         }
@@ -1198,7 +1199,7 @@
         
         .requirements li:before {
             content: "✓";
-            color: #f44336;
+            color: #ff5722;
             margin-right: 10px;
             font-weight: bold;
         }
@@ -1210,7 +1211,7 @@
         }
         
         .application-form h2 {
-            color: #f44336;
+            color: #ff5722;
             margin-bottom: 20px;
             text-align: center;
         }
@@ -1266,7 +1267,7 @@
         }
         
         .btn-submit {
-            background-color: #f44336;
+            background-color: #ff5722;
             border: none;
             color: white;
             padding: 12px 24px;
@@ -1281,7 +1282,7 @@
         }
         
         .btn-submit:hover {
-            background-color: #d32f2f;
+            background-color: #e64210;
         }
         
         .form-note {
@@ -1364,7 +1365,7 @@
         }
         
         .next-steps h3 {
-            color: #f44336;
+            color: #ff5722;
             margin-bottom: 15px;
             font-size: 1.4rem;
         }
@@ -1382,7 +1383,7 @@
         }
         
         .btn-home {
-            background-color: #f44336;
+            background-color: #ff5722;
             color: white;
             padding: 12px 30px;
             border-radius: 4px;
@@ -1395,7 +1396,7 @@
         }
         
         .btn-home:hover {
-            background-color: #d32f2f;
+            background-color: #e64210;
         }
         
         .social-prompt {
@@ -1425,7 +1426,7 @@
         
         .social-icons a:hover {
             transform: translateY(-3px);
-            background-color: #f44336;
+            background-color: #e64210;
         }
         
         /* Animation */
