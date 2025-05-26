@@ -1,6 +1,6 @@
 // Initialize EmailJS
 (function() {
-    // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+    // EmailJS user ID
     emailjs.init("QRMZp4Zq_LCCUcn4t");
     
     // Add form submission event handler
