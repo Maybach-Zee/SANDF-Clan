@@ -81,14 +81,48 @@
                 </div>
             </div>
             
-            <div class="notification-form">
-                <h3>Want to be the first to know when our merch drops?</h3>
-                <p>Sign up to get notified when our merchandise store goes live.</p>
-                <form id="notify-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit">Notify Me</button>
-                </form>
+           <div class="demo-container">
+        <div class="notification-form">
+            <h3>Want to be the first to know when our merch drops?</h3>
+            <p>Sign up to get notified when our merchandise store goes live.</p>
+            <form id="notify-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Notify Me</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification Modal -->
+    <div id="notification-modal" class="notification-modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeNotificationModal()">&times;</button>
+            
+            <div class="modal-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M9 11l3 3 8-8"></path>
+                    <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.65 0 3.2.45 4.52 1.23"></path>
+                </svg>
             </div>
+            
+            <h2 class="modal-title">Mission Accepted!</h2>
+            <p class="modal-message">
+                You're now on the priority list for our exclusive SANDF merchandise launch.
+            </p>
+            <div class="modal-email" id="modal-email-display"></div>
+            <p class="modal-subtext">
+                Gear up soldier - we'll send you intel when the store goes live!
+            </p>
+            
+            <div class="modal-buttons">
+                <button class="btn-primary-modal" onclick="closeNotificationModal()">
+                    Roger That!
+                </button>
+                <button class="btn-secondary-modal" onclick="closeNotificationModal()">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
             
             <div class="social-share">
                 <p>Spread the word:</p>
@@ -196,17 +230,45 @@ function updateCountdown() {
     }
 }
 
-// Update countdown every second
-setInterval(updateCountdown, 1000);
-updateCountdown(); // Initial call
+    // Update countdown every second
+    setInterval(updateCountdown, 1000);
+    updateCountdown(); // Initial call
         
-        // Handle notification form
+       // Handle notification form
         const notifyForm = document.getElementById('notify-form');
+        const notificationModal = document.getElementById('notification-modal');
+        const modalEmailDisplay = document.getElementById('modal-email-display');
+
         notifyForm.addEventListener('submit', function(e) {
             e.preventDefault();
             const email = this.querySelector('input[type="email"]').value;
-            alert(`Thank you! We'll notify ${email} when our merchandise store launches.`);
+            
+            // Update modal with email
+            modalEmailDisplay.textContent = email;
+            
+            // Show modal
+            notificationModal.classList.add('active');
+            
+            // Reset form
             this.reset();
+        });
+
+        function closeNotificationModal() {
+            notificationModal.classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        notificationModal.addEventListener('click', function(e) {
+            if (e.target === notificationModal) {
+                closeNotificationModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && notificationModal.classList.contains('active')) {
+                closeNotificationModal();
+            }
         });
     </script>
 </body>
