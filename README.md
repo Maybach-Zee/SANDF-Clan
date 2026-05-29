@@ -1,12 +1,12 @@
-# 🪖 SANDF Clan
+# SANDF Clan
 
 A web-based platform for the **SANDF (South African National Defence Force) Clan** — built to represent and connect clan members through a dedicated online presence.
 
-## 🌐 Overview
+## Overview
 
 The SANDF Clan website serves as the digital home for the SANDF gaming clan. It is hosted via **Firebase Hosting** and built using modern front-end web technologies, providing a clean and engaging experience for clan members and visitors alike.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Usage |
 |---|---|
@@ -15,7 +15,7 @@ The SANDF Clan website serves as the digital home for the SANDF gaming clan. It 
 | JavaScript | Interactivity and dynamic content |
 | Firebase | Hosting and backend services |
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 SANDF-Clan/
@@ -26,7 +26,7 @@ SANDF-Clan/
 └── .gitignore
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -61,16 +61,16 @@ firebase login
 firebase deploy
 ```
 
-## 📌 Features
+## Features
 
 - Clan identity and branding
 - Responsive web design
 - Fast static hosting via Firebase CDN
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
